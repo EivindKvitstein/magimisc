@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2.0.0
-    - name: grab and post gif and message
+    - name: Warm Welcome Action
+    - uses: bntzio/warm-welcome-action@v0.1.0
       id: warm_welcome
-      uses: bntzio/warm-welcome-action@v0.1.0
       with: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
