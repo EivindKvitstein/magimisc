@@ -14,7 +14,7 @@ jobs:
     - uses: actions/checkout@v2.0.0
     - name: grab and post gif and message
       id: warm_welcome
-      uses: bntzio/warm-welcome-action@latest
+      uses: bntzio/warm-welcome-action@v0.1.0
       with: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
